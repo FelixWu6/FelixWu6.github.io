@@ -50,7 +50,7 @@ layout: null
             text-decoration: underline;
         }
 
-        /* Navbar */
+        /* 导航栏 */
         nav {
             position: sticky;
             top: 0;
@@ -92,7 +92,7 @@ layout: null
             color: var(--accent-color);
         }
 
-        /* Layout */
+        /* 页面布局 */
         .main-container {
             max-width: 900px;
             margin: 3rem auto;
@@ -102,7 +102,7 @@ layout: null
             gap: 2rem;
         }
 
-        /* Sections / Cards */
+        /* 区域模块与卡片样式 */
         .section-title {
             font-size: 1.5rem;
             font-weight: 700;
@@ -119,7 +119,7 @@ layout: null
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
-        /* Hero Section */
+        /* 个人简介区域 */
         .hero-layout {
             display: flex;
             gap: 2.5rem;
@@ -163,7 +163,7 @@ layout: null
             font-weight: 500;
         }
 
-        /* timeline blocks */
+        /* 时间线区块 */
         .timeline {
             border-left: 2px solid var(--accent-color);
             padding-left: 1.5rem;
@@ -208,7 +208,7 @@ layout: null
             display: block;
         }
 
-        /* Publication Cards */
+        /* 论文展示卡片 */
         .pub-list {
             display: flex;
             flex-direction: column;
@@ -247,7 +247,7 @@ layout: null
             margin-bottom: 1rem;
         }
 
-        /* Hide the native toggle triangle inside summary tags for cleaner UI */
+        /* 隐藏 summary 标签内原生的切换三角形，使界面更加整洁 */
         details.abstract-dropdown > summary {
             list-style: none;
         }
@@ -277,7 +277,7 @@ layout: null
             border-color: #d1d5db;
         }
 
-        /* Awards Grid */
+        /* 奖项网格排版 */
         .awards-list {
             display: flex;
             flex-direction: column;
@@ -309,7 +309,7 @@ layout: null
             color: var(--accent-color);
         }
 
-        /* Responsive */
+        /* 响应式设计，适配移动端 */
         @media (max-width: 768px) {
             .hero-layout {
                 flex-direction: column-reverse;
@@ -339,7 +339,7 @@ layout: null
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- 顶部导航栏 -->
     <nav>
         <div class="nav-container">
             <a href="#" class="nav-brand">Xiang Wu</a>
@@ -352,7 +352,7 @@ layout: null
         </div>
     </nav>
 
-    <!-- Main Content Grid -->
+    <!-- 主内容呈现网格 -->
     <div class="main-container">
         {% include Introduction.html %}
         {% include ProjectExperience.html %}
@@ -360,7 +360,7 @@ layout: null
         {% include AwardsHonors.html %}
     </div>
 
-    <!-- Footer dynamically utilizing Jekyll liquid tags -->
+    <!-- 动态使用 Jekyll liquid 标签的页脚 -->
     <footer>
         <p>&copy; 2026 XiangWu. All rights reserved. | Contact | Last updated: {{ site.time | date: "%Y-%m-%d" }}</p>
     </footer>
