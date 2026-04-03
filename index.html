@@ -3,6 +3,7 @@ layout: null
 ---
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -115,7 +116,7 @@ layout: null
             border: 1px solid var(--border-color);
             border-radius: 12px;
             padding: 2.5rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
             transition: transform 0.2s, box-shadow 0.2s;
         }
 
@@ -253,10 +254,11 @@ layout: null
         }
 
         /* 隐藏 summary 标签内原生的切换三角形，使界面更加整洁 */
-        details.abstract-dropdown > summary {
+        details.abstract-dropdown>summary {
             list-style: none;
         }
-        details.abstract-dropdown > summary::-webkit-details-marker {
+
+        details.abstract-dropdown>summary::-webkit-details-marker {
             display: none;
         }
 
@@ -320,14 +322,17 @@ layout: null
                 flex-direction: column-reverse;
                 text-align: center;
             }
+
             .tags-container {
                 justify-content: center;
             }
+
             .award-item {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 0.5rem;
             }
+
             .nav-links {
                 display: none;
             }
@@ -342,6 +347,7 @@ layout: null
         }
     </style>
 </head>
+
 <body>
 
     <!-- 顶部导航栏 -->
@@ -367,8 +373,9 @@ layout: null
 
     <!-- 动态使用 Jekyll liquid 标签的页脚 -->
     <footer>
-        <p>&copy; 2026 XiangWu. All rights reserved. | Contact | Last updated: {{ site.time | date: "%Y-%m-%d" }}</p>
+        <p>&copy; 2026 XiangWu. All rights reserved. | Last updated: {{ site.time | date: "%Y-%m-%d" }}</p>
     </footer>
 
 </body>
+
 </html>
